@@ -8,24 +8,49 @@ import IndustriesSection from "@/components/sections/IndustriesSection";
 import ProcessSection from "@/components/sections/ProcessSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
 import FAQSection from "@/components/sections/FAQSection";
-import CTASection from "@/components/sections/CTASection";
 import ContactLeadForm from "@/components/sections/ContactLeadForm";
+import CTASection from "@/components/sections/CTASection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
+
+      {/* Hero */}
       <HeroSection />
+
+      {/* Trusted Companies & NGOs */}
       <TrustedClientsSection />
+
+      {/* About ACS */}
       <AboutSection />
+
+      {/* Services */}
       <ServicesSection />
+
+      {/* Why Choose Us */}
       <WhyChooseUs />
+
+      {/* Statistics */}
       <CounterSection />
+
+      {/* Industries We Serve */}
       <IndustriesSection />
+
+      {/* Process */}
       <ProcessSection />
+
+      {/* Testimonials */}
       <TestimonialSection />
+
+      {/* FAQ */}
       <FAQSection />
+
+      {/* Lead Form */}
       <ContactLeadForm />
+
+      {/* Call To Action */}
       <CTASection />
+
     </main>
   );
 }
