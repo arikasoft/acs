@@ -1,11 +1,12 @@
 import { prisma } from "@/lib/prisma";
 
+export const dynamic = "force-dynamic";
+
 export default async function StaffPage() {
   const staff = await prisma.user.findMany();
 
   return (
     <div className="p-8">
-
       <div className="flex justify-between mb-8">
         <h1 className="text-3xl font-bold">
           Staff Management
@@ -20,9 +21,7 @@ export default async function StaffPage() {
       </div>
 
       <div className="bg-white rounded-2xl shadow p-6">
-
         <table className="w-full">
-
           <thead>
             <tr>
               <th>Name</th>
@@ -42,11 +41,8 @@ export default async function StaffPage() {
               </tr>
             ))}
           </tbody>
-
         </table>
-
       </div>
-
     </div>
   );
 }
