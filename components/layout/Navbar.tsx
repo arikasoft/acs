@@ -22,8 +22,8 @@ export default function Navbar() {
     <Link
       href={href}
       className={`transition-all duration-300 hover:text-amber-300 ${pathname === href
-          ? "text-amber-300 font-semibold"
-          : "text-white"
+        ? "text-amber-300 font-semibold"
+        : "text-white"
         }`}
     >
       {label}
@@ -231,13 +231,6 @@ export default function Navbar() {
                 className="px-4 py-2 rounded-xl border border-white/30 text-white hover:bg-white/10"
               >
                 Login
-              </Link>
-
-              <Link
-                href="/dashboard"
-                className="px-4 py-2 rounded-xl bg-cyan-500 text-white font-semibold"
-              >
-                CRM Dashboard
               </Link>
 
               <Link
